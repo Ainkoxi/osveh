@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Ray";
+  src: url(assets/fonts/Ray/Ray-ExtraBlack.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Ray";
+  src: url(assets/fonts/Ray/Ray-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Iran sans";
+  src: url(assets/fonts/IRANSans/IRANSans-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Iran sans";
+  src: url(assets/fonts/IRANSans/IRANSans.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Iran sans";
+  src: url(assets/fonts/IRANSans/IRANSans-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Iran sans";
+  src: url(assets/fonts/IRANSans/IRANSans-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Iran sans";
+  src: url(assets/fonts/IRANSans/IRANSans-Light.ttf);
+  font-weight: 300;
+}
+
+body {
+  font-family: "Iran sans";
+  background-color: #fdfdfd;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.w-85 {
+  width: 85vw;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  background-color: #f3f3f3 !important;
+}
+
+.ray {
+  font-family: "Ray";
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.logo h1 {
+  font-weight: 900;
+}
+
+.logo .cap {
+  color: #0197f6;
+  border-left: 3px solid #dfdfdf;
+}
+
+nav ul{
+  gap: .8rem;
+}
+
+nav ul li {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3px;
+  background-color: #d9f0ff;
+  border-radius: 12px;
+  padding-bottom: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #000;
+  padding: 4px 18px;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+nav ul li:hover::after {
+  transform: translateX(0);
+}
+nav ul li:hover a{
+  color: #fdfdfd;
+}
+
+nav ul li::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 122, 255);
+  display: block;
+  position: absolute;
+  transform: translateX(-105%);
+  bottom: 0;
+  transition: all 0.4s ease-in-out;
+  border-radius: 12px;
+}
+
+li.activepage::after {
+  transform: translateX(0);
+}
+
+li.activepage a{
+  color: #fdfdfd;
+}
+
+h1.ray,
+h2.ray {
+  font-weight: 800 !important;
+}
+
+.before-head {
+  display: flex;
+  align-items: center;
+}
+
+.before-head::before {
+  content: " ";
+  width: 16px;
+  height: 40px;
+  background-color: #0197f6;
+  border-radius: 6px;
+  display: block;
+  margin-left: 8px;
+}
+
+.about {
+  padding: 0 5rem;
+}
+
+.about .right {
+  flex-basis: 40%;
+}
+
+.about .right img {
+  width: 100%;
+  border-radius: 45px;
+}
+
+.about .left {
+  flex-basis: 60%;
+}
+
+.about .left img {
+  width: 115px;
+}
+
+.description-3 div {
+  flex: 0 1 48%;
+  background-color: #d9f0ff;
+  border-radius: 24px;
+  padding: 12px 10px;
+}
+
+.text-blue {
+  color: #0197f6;
+}
+
+.about-text {
+  background-color: #d9f0ff;
+  border-radius: 24px;
+}
+
+#events iframe {
+  width: 100%;
+}
+
+#events ul li {
+  padding: 20px;
+  border-radius: 24px;
+}
+
+#events ul li h5 {
+  margin-bottom: 0;
+}
+.before-bullet li::before {
+  position: absolute;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  background-color: #0197f6;
+  right: 0;
+}
+.before-bullet li {
+  background-color: #d9f0ff;
+  list-style: none;
+}
